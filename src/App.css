@@ -1,38 +1,206 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar{
+  background:linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
+ 
+}
+
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*LOGO*/
+
+.image-logo{
+ padding: 0 10px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*NAV-BAR TOGGLE*/
+.toggle{
+  border: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toggle:focus{
+  box-shadow: none !important;
+}
+/*NAV-LINKS*/
+
+
+/*SECTION*/
+section{
+  height: 100%;
+  
+}
+.contact-section {
+  
+  height: 100vh; 
+  background-color: rgb(255, 255, 255);
+}
+
+/*---HOME---*/
+
+.contenedor-sobre-nosotros {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.imagen-about-us {
+  margin: 5rem;
+  min-width: 20%;
+}
+
+.sobre-nosotros .contenido-textos {
+ margin: 8rem;
+  width: 48%;
+}
+
+.contenido-textos h3 span .icon-code {
+  background: rgb(14, 100, 248);
+  color: #fff;
+  border-radius: 20%;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 5px;
+ 
+
+}  
+
+
+.contenido-textos p {
+  padding: 0px 0px 20px 15px;
+  font-weight: 400;
+  text-align: justify;
+
+}
+
+/*---END-HOME---*/
+
+
+/*CONTACT*/
+
+
+/*END-CONTACT*/
+
+/*FOOTER*/
+
+
+.bg-footer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ background:linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
+ width: 100%;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+/*PAGE SERVICES*/
+/*services*/
+
+.container-group{
+  height: 100vh;
+  margin-top: 5rem;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body{
+  background: linear-gradient(45deg, transparent 49%, #d4d3d8 49% 51%, transparent 51%) , linear-gradient(-45deg, transparent 49%, #f8f8f8 49% 51%, transparent 51%);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  opacity: 1
+}
+/*END PAGE SERVICES*/
+
+/*CONTACT- PAGE*/
+ /*form*/
+
+ 
+ .container-form{
+  margin: 10%;
+ 
+
+ }
+ 
+
+/*END-CONTACT- PAGE*/
+
+/* MEDIAQUERIES*/
+
+@media screen and (max-width:900px) {
+ 
+
+  .contenedor-sobre-nosotros {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .sobre-nosotros .contenido-textos {
+      width: 90%;
+
+  }
+
+  .imagen-about-us {
+      width: 90%;
+  }
+
+  /*form*/
+ .container-form{
+  margin: 25%;
+
+ }
+}
+
+@media screen and (max-width:575px){
+
+  section {
+    color: rgb(4, 4, 4);
+    height: 100%; 
+    overflow: hidden;
+    
+  }
+
+  /*services*/
+  .container-group{
+    height: 100%;
+    
   }
 }
+
+@media  screen and (max-width:400px) {
+
+  .sobre-nosotros  {
+   
+ padding-top: 5vh;
+}
+
+/*form*/
+
+.container-form{
+  margin: 25%;
+overflow: hidden;
+
+ }
+}
+@media  screen and (max-width:244px) {
+
+  .toggle{
+    display: none;
+  }
+}
+
+
+
+
+
