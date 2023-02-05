@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 
 const Contact = () => {
   return(
-  
+    <section className='contact-section'>
  <Form className='container-form center-block' >
 
 <Form.Group className="mb-3 " controlId="form-name">
@@ -30,7 +30,7 @@ const Contact = () => {
 <Button variant="primary">Enviar</Button>
 
 </Form>
-
+</section>
 
   )
 }
