@@ -48,6 +48,7 @@ const NavBar = () =>{
          
         </Outlet>
       </section>
+      
       <Footer/>
       </>
   )
