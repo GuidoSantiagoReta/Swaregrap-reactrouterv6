@@ -6,7 +6,7 @@ import server from '../images/server2.jpg';
 
 const Services = () =>{ 
     return(
-      <div className='container-group'>
+      <div className='animate__animated animate__bounce container-group'>
         <CardGroup variant="separated"className='group-card g-3'>
       <Card>
         <Card.Img variant="top" src={react1}/>
@@ -53,4 +53,3 @@ export default Services;
 
 
 
-{/* */}

@@ -2,11 +2,11 @@ import React from 'react';
 import developer from'../images/developer.png'
 import { BsCodeSlash } from "react-icons/bs";
 import { AiOutlineDesktop } from "react-icons/ai";
-
+import 'animate.css';
 const Home = () => {
   return(
       
-    <section class="contenedor sobre-nosotros">
+    <section class="animate__animated animate__bounce contenedor sobre-nosotros">
     <div className="contenedor-sobre-nosotros">
         <img src={developer} alt="Desarrollo Web" class="imagen-about-us"/>
         <div class="contenido-textos">

@@ -68,3 +68,4 @@ export default App;
 - https://heroicons.com/ (iconos)
 - uigradients
 - react-icons __npm install react-icons__
+- npm install animate.css --save
