@@ -1,20 +1,18 @@
+import React from "react";
 
 const Footer = () => {
-    return(
- 
-
-        <div  className='bg-footer text-center text-lg-left'>
-        <div className='text-center p-3 text-light'>
-          &copy; {new Date().getFullYear()} Copyright: {' '}
-          <a className='text-light' href='https://reactportfolio-guidosantiagoreta.vercel.app/'>
-            Guido Santiago Reta
-          </a>
-        </div>
+  return (
+    <div className="bg-footer text-center text-lg-left">
+      <div className="text-center p-3 text-light">
+        &copy; {new Date().getFullYear()} Copyright:{" "}
+        <a
+          className="text-light"
+          href="https://reactportfolio-guidosantiagoreta.vercel.app/"
+        >
+          Guido Santiago Reta
+        </a>
       </div>
-  
-    )
-  }
-  export default Footer;
-  
-
-  
+    </div>
+  );
+};
+export default Footer;

@@ -1,45 +1,47 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.nav-bar{
-  background:linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
- 
+.nav-bar {
+  background: linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
+
 }
 
-.App{
+.App {
   text-align: center;
 }
 
 
 /*LOGO*/
 
-.image-logo{
- padding: 0 10px;
-  
+.image-logo {
+  padding: 0 10px;
+
 }
 
 /*NAV-BAR TOGGLE*/
-.toggle{
+.toggle {
   border: none !important;
 }
 
-.toggle:focus{
+.toggle:focus {
   box-shadow: none !important;
 }
+
 /*NAV-LINKS*/
 
 
 /*SECTION*/
-section{
-  height: 100%;
-  
+section {
+  height: 100vh;
+
 }
+
 .contact-section {
-  
-  height: 100vh; 
+
+  height: 100vh;
   background-color: rgb(255, 255, 255);
 }
 
@@ -49,7 +51,7 @@ section{
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
-  
+
 }
 
 .imagen-about-us {
@@ -58,7 +60,7 @@ section{
 }
 
 .sobre-nosotros .contenido-textos {
- margin: 8rem;
+  margin: 8rem;
   width: 48%;
 }
 
@@ -73,15 +75,16 @@ section{
   padding: 2px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
   margin-right: 5px;
- 
 
-}  
+
+}
 
 
 .contenido-textos p {
   padding: 0px 0px 20px 15px;
   font-weight: 400;
   text-align: justify;
+  color: rgb(5, 34, 119);
 
 }
 
@@ -96,106 +99,102 @@ section{
 /*FOOTER*/
 
 
-.bg-footer{
+.bg-footer {
   display: flex;
   flex-direction: column;
- background:linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
- width: 100%;
- 
+  background: linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
+  width: 100%;
+
 }
 
 /*PAGE SERVICES*/
 /*services*/
 
-.container-group{
+.container-group {
   height: 100vh;
-  margin-top: 5rem;
-  
+  margin-top: 10rem;
+
 }
 
 
 /*END PAGE SERVICES*/
 
 /*CONTACT- PAGE*/
- /*form*/
+/*form*/
 
- 
- .container-form{
+
+.container-form {
   margin: 10%;
- 
 
- }
- 
+}
+
 
 /*END-CONTACT- PAGE*/
 
 /* MEDIAQUERIES*/
 
 @media screen and (max-width:900px) {
- 
+
 
   .contenedor-sobre-nosotros {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   }
 
   .sobre-nosotros .contenido-textos {
-      width: 90%;
+    width: 90%;
 
   }
 
   .imagen-about-us {
-      width: 90%;
+    width: 90%;
   }
 
   /*form*/
- .container-form{
-  margin: 25%;
+  .container-form {
+    margin: 25%;
 
- }
+  }
 }
 
-@media screen and (max-width:575px){
+@media screen and (max-width:575px) {
 
   section {
     color: rgb(4, 4, 4);
-    height: 100%; 
+    height: 100%;
     overflow: hidden;
-    
+
   }
 
   /*services*/
-  .container-group{
+  .container-group {
     height: 100%;
-    
+
   }
 }
 
-@media  screen and (max-width:400px) {
+@media screen and (max-width:400px) {
 
-  .sobre-nosotros  {
-   
- padding-top: 5vh;
+  .sobre-nosotros {
+
+    padding-top: 5vh;
+  }
+
+  /*form*/
+
+  .container-form {
+    margin: 25%;
+    overflow: hidden;
+
+  }
 }
 
-/*form*/
+@media screen and (max-width:244px) {
 
-.container-form{
-  margin: 25%;
-overflow: hidden;
-
- }
-}
-@media  screen and (max-width:244px) {
-
-  .toggle{
+  .toggle {
     display: none;
   }
 }
-
-
-
-
 
