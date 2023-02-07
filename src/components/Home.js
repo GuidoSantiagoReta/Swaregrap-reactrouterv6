@@ -5,10 +5,10 @@ import { AiOutlineDesktop } from "react-icons/ai";
 //import 'animate.css';
 const Home = () => {
   return (
-    <section class="contenedor sobre-nosotros">
+    <section className="contenedor sobre-nosotros">
       <div className="contenedor-sobre-nosotros">
-        <img src={developer} alt="Desarrollo Web" class="imagen-about-us" />
-        <div class="contenido-textos">
+        <img src={developer} alt="Desarrollo Web" className="imagen-about-us" />
+        <div className="contenido-textos">
           <h3>
             <span>
               <BsCodeSlash className="icon-code" />

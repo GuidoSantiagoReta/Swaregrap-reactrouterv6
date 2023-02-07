@@ -35,7 +35,12 @@
 
 /*SECTION*/
 section {
-  height: 100vh;
+  
+    
+    height: 100%;
+    overflow: hidden;
+
+ 
 
 }
 
@@ -112,7 +117,7 @@ section {
 
 .container-group {
   height: 100vh;
-  margin-top: 10rem;
+  margin-top: 6rem;
 
 }
 
@@ -135,7 +140,12 @@ section {
 
 @media screen and (max-width:900px) {
 
+  section {
+    
+    height: 100%;
+    overflow: hidden;
 
+  }
   .contenedor-sobre-nosotros {
     flex-direction: column;
     justify-content: center;
@@ -154,7 +164,7 @@ section {
 
   /*form*/
   .container-form {
-    margin: 25%;
+    margin: 20%;
 
   }
 }
@@ -162,7 +172,7 @@ section {
 @media screen and (max-width:575px) {
 
   section {
-    color: rgb(4, 4, 4);
+    
     height: 100%;
     overflow: hidden;
 
