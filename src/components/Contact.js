@@ -36,9 +36,9 @@ const Contact = () => {
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Mensaje</Form.Label>
           <Form.Control
-            style={{ width: "190px", margin: "auto" }}
+            style={{ width: "190px", margin: "auto", height:"90px" }}
             as="textarea"
-            rows={3}
+            rows={3}ss
           />
         </Form.Group>
         <Button variant="primary">Enviar</Button>
