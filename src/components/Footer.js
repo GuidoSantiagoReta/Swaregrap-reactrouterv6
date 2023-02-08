@@ -9,7 +9,7 @@ const Footer = () => {
           className="text-light"
           href="https://reactportfolio-guidosantiagoreta.vercel.app/"
         >
-          Guido Santiago Reta
+         Guido Santiago Reta
         </a>
       </div>
     </div>
