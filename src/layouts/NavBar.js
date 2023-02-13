@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Outlet, Link } from "react-router-dom";
 import logoreact from "../images/logo192.png";
+import Slider from"../components/Slider";
 import Footer from "../components/Footer";
+
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -70,9 +72,11 @@ const NavBar = () => {
 
       {/*mostrar el contenido de la vista */}
       <section>
-        <Outlet></Outlet>
+        <Outlet>
+         
+        </Outlet>
       </section>
-
+      <Slider/>
       <Footer />
     </>
   );

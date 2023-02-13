@@ -2,6 +2,8 @@ import React from "react";
 import developer from "../images/developer.png";
 import { BsCodeSlash } from "react-icons/bs";
 import { AiOutlineDesktop } from "react-icons/ai";
+
+
 //import 'animate.css';
 const Home = () => {
   return (
@@ -33,8 +35,15 @@ const Home = () => {
             sistemas operativos Windows y Linux.
           </p>
         </div>
+        
+     
       </div>
+      
     </section>
+    
+    
+   
   );
 };
+
 export default Home;
