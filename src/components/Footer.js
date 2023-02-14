@@ -7,9 +7,9 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Copyright:{" "}
         <a
           className="text-light"
-          href="https://swaregrap-reactrouterv6.vercel.app/"
+          href="https://reactportfolio-guidosantiagoreta.vercel.app/"
         >
-         SwareGrap
+         Guido Santiago Reta
         </a>
       </div>
     </div>
