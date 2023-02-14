@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { Outlet, Link } from "react-router-dom";
 import logoreact from "../images/logo192.png";
 import Footer from "../components/Footer";
+import Slider from "../components/Slider";
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -72,7 +73,7 @@ const NavBar = () => {
       <section>
         <Outlet></Outlet>
       </section>
-
+      <Slider/>
       <Footer />
     </>
   );
