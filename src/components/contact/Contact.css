@@ -1,0 +1,17 @@
+section {
+    
+    height: 100vh;
+    overflow: hidden;
+
+  }
+  
+
+  @media screen and (max-width:575px) {
+
+    section {
+      
+      height: 100vh;
+      overflow: hidden;
+  
+    }
+}
