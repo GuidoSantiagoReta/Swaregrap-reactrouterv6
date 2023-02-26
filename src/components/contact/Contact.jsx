@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
+import './Contact.css'
 const Contact = () => {
 
 const [form, setForm] = useState({
@@ -33,8 +33,9 @@ const {name,email, phone, message} = form;
   }
 
   return (
+    
     <section className="contact-section">
-
+       <h2 className="title">Contacto</h2>
       <Form onSubmit={handleSubmit} className="container-form center-block">
         <Form.Group className="mb-3 " controlId="form-name">
           <Form.Label>Nombre</Form.Label>

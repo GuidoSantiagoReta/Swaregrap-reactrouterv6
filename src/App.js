@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Services from "./components/Services";
+import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+import Services from "./components/jobdescription/Services";
 import NavBar from "./layouts/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 

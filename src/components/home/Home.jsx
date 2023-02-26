@@ -1,7 +1,9 @@
 import React from "react";
-import developer from "../images/developer.png";
+import developer from "../../images/developer.png";
 import { BsCodeSlash } from "react-icons/bs";
 import { AiOutlineDesktop } from "react-icons/ai";
+import './Home.css'
+
 //import 'animate.css';
 const Home = () => {
   return (
