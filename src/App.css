@@ -39,7 +39,7 @@ section {
     
     height: 100vh;
     overflow: hidden;
-
+    background: #ffffff;
  
 
 }
@@ -49,6 +49,7 @@ section {
   height: 100vh;
   background-color: rgb(255, 255, 255);
 }
+
 
 /*---HOME---*/
 
@@ -67,6 +68,10 @@ section {
 .sobre-nosotros .contenido-textos {
   margin: 8rem;
   width: 48%;
+}
+
+.contenido-textos>h3{
+  color:rgb(5, 34, 119);
 }
 
 .contenido-textos h3 span .icon-code {
@@ -89,7 +94,7 @@ section {
   padding: 0px 0px 20px 15px;
   font-weight: 400;
   text-align: justify;
-  color: rgb(5, 34, 119);
+  color: rgb(0, 0, 0);
 
 }
 
@@ -237,7 +242,13 @@ section {
   margin-top: 6rem;
 
 }
-
+.title-services {
+  color: rgb(5, 34, 119);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
 
 /*END PAGE SERVICES*/
 
@@ -246,10 +257,16 @@ section {
 
 
 .container-form {
-  margin: 10%;
+  margin: 5%;
 
 }
-
+.contact-title{
+  color: rgb(5, 34, 119);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 95px;
+  
+}
 
 /*END-CONTACT- PAGE*/
 
@@ -281,7 +298,7 @@ section {
 
   /*form*/
   .container-form {
-    margin: 20%;
+    margin: 5%;
 
   }
 }

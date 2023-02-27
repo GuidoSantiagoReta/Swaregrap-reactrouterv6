@@ -34,7 +34,7 @@ const {name,email, phone, message} = form;
 
   return (
     <section className="contact-section">
-
+      <h2 className="contact-title">Contacto</h2>
       <Form onSubmit={handleSubmit} className="container-form center-block">
         <Form.Group className="mb-3 " controlId="form-name">
           <Form.Label>Nombre</Form.Label>

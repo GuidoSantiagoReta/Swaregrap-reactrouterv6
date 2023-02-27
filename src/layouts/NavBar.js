@@ -12,7 +12,7 @@ const NavBar = () => {
     <>
       <Navbar fixed="top" className="nav-bar" variant="dark" expand="md">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to="/home">
             <img className="image-logo" src={logoreact} height="30" alt="SwareGrap" />
             SwareGrap
           </Navbar.Brand>

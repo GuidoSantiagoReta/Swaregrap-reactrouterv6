@@ -7,6 +7,7 @@ import server from "../images/server2.jpg";
 const Services = () => {
   return (
     <div className="container-group">
+       <h2 className="title-services">Servicios</h2>
       <CardGroup variant="separated" className="group-card g-3">
         <Card>
           <Card.Img variant="top" src={react1} />
