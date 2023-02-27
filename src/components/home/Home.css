@@ -1,4 +1,9 @@
 /*---HOME---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .contenedor-sobre-nosotros {
     padding: 10px;
@@ -46,6 +51,10 @@
 
 /*MEDIAQUERIES*/
 
+
+
+
+
 @media screen and (max-width:900px) {
 
     section {
@@ -54,10 +63,12 @@
       overflow: hidden;
   
     }
+    
     .contenedor-sobre-nosotros {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      
   
     }
   
@@ -74,9 +85,7 @@
 
 @media screen and (max-width:400px) {
 
-    .sobre-nosotros {
-  
-      padding-top: 5vh;
-    }
+ 
+    
   
   }
