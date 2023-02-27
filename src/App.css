@@ -30,7 +30,261 @@
   box-shadow: none !important;
 }
 
+/*NAV-LINKS*/
 
+
+/*SECTION*/
+section {
+  
+    
+    height: 100vh;
+    overflow: hidden;
+
+ 
+
+}
+
+.contact-section {
+
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+/*---HOME---*/
+
+.contenedor-sobre-nosotros {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.imagen-about-us {
+  margin: 5rem;
+  min-width: 20%;
+}
+
+.sobre-nosotros .contenido-textos {
+  margin: 8rem;
+  width: 48%;
+}
+
+.contenido-textos h3 span .icon-code {
+  background: rgb(14, 100, 248);
+  color: #fff;
+  border-radius: 20%;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 5px;
+
+
+}
+
+
+.contenido-textos p {
+  padding: 0px 0px 20px 15px;
+  font-weight: 400;
+  text-align: justify;
+  color: rgb(5, 34, 119);
+
+}
+
+/*---END-HOME---*/
+
+
+/*CONTACT*/
+
+
+/*END-CONTACT*/
+
+/*SLIDER*/
+
+/* Slider start */
+@-webkit-keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  
+  100% {
+  -webkit-transform: translateX(calc(-200px * 10));
+  transform: translateX(calc(-200px * 10));
+  }
+  }
+  
+  @keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  
+  100% {
+  -webkit-transform: translateX(calc(-200px * 10));
+  transform: translateX(calc(-200px * 10));
+  }
+  }
+  
+  .slider-container {
+  padding: 40px 0 85px;
+  height: 200px;
+  }
+  
+  .slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  border-color: rgb(197, 196, 196);
+  border-width: 1px;
+  border-style: dotted solid;
+  }
+  
+  .slider::before,
+  .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(to right, #61d095 0%, rgba(97, 208, 149, 0) 100%); */
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  }
+  
+  .slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+  }
+  
+  .slider::before {
+  left: 0;
+  top: 0;
+  }
+  
+  .slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 31);
+  }
+  
+  .slider .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 250px;
+  }
+  /* Slider end */
+  .slide>a{
+  text-decoration: none;
+  }
+  
+  .h4-container {
+  display: flex;
+  justify-content: center;
+  }
+  
+  .logo-slider-title {
+  width: 400px;
+  font-size: 22px;
+  margin-left: 25px;
+  color: rgb(141, 139, 139);
+  }
+  
+  .corporation1{
+  color: #FF4E02;
+  }
+  .corporation2{
+  color:rgb(8, 0, 83);
+  }
+  .corporation3{
+  color:#0c0c0c;
+  }
+  .corporation4{
+  color:#5e0127;
+  }
+  .corporation5{
+  color: #4e8e07;
+  }
+  /*END-SLIDER- PAGE*/
+  
+/*FOOTER*/
+
+
+.bg-footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
+  width: 100%;
+
+}
+
+
+/*PAGE SERVICES*/
+/*services*/
+
+.container-group {
+  height: 100vh;
+  margin-top: 6rem;
+
+}
+
+
+/*END PAGE SERVICES*/
+
+/*CONTACT- PAGE*/
+/*form*/
+
+
+.container-form {
+  margin: 10%;
+
+}
+
+
+/*END-CONTACT- PAGE*/
+
+/* MEDIAQUERIES*/
+
+@media screen and (max-width:900px) {
+
+  section {
+    
+    height: 100%;
+    overflow: hidden;
+
+  }
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .sobre-nosotros .contenido-textos {
+    width: 90%;
+
+  }
+
+  .imagen-about-us {
+    width: 90%;
+  }
+
+  /*form*/
+  .container-form {
+    margin: 20%;
+
+  }
+}
 
 @media screen and (max-width:575px) {
 
@@ -48,7 +302,21 @@
   }
 }
 
+@media screen and (max-width:400px) {
 
+  .sobre-nosotros {
+
+    padding-top: 5vh;
+  }
+
+  /*form*/
+
+  .container-form {
+    margin: 25%;
+    overflow: hidden;
+
+  }
+}
 
 @media screen and (max-width:244px) {
 
