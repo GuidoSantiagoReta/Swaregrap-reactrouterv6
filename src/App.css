@@ -11,6 +11,7 @@
 
 .App {
   text-align: center;
+
 }
 
 
@@ -105,7 +106,7 @@ section {
 
 .contenido-textos p {
   padding: 0px 0px 20px 15px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: justify;
   color: rgb(0, 0, 0);
   font-size: 18px;
@@ -313,7 +314,7 @@ section {
   background-image: url(/src/images/Sprinkle.svg);
   background-size: cover;
   padding-bottom: 100px;
-
+  
 
 }
 
@@ -335,12 +336,13 @@ section {
   width: 90%;
   border-radius: 20px;
   box-shadow: 1px 5px 5px 3px rgb(209, 209, 209);
+  background-color: white;
 }
 
 .individual-product h3 {
   margin: 10px;
   color: rgb(0, 0, 0);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 
@@ -380,7 +382,12 @@ section {
   }
 
 }
+@media screen and (min-width:769px) and (max-width:900px) {
+    .aboutus{
+    height: 100vh;
+    }
 
+  }
 @media screen and (max-width:575px) {
 
   section {
@@ -434,9 +441,17 @@ section {
   /*form*/
 }
 
+@media screen and (max-width:384px) {
+  .contact-section{
+    height: 100vh;
+  }
+
+}
+
 @media screen and (max-width:244px) {
 
   .toggle {
     display: none;
   }
+  
 }

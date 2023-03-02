@@ -41,7 +41,7 @@ const {name,email, phone, message} = form;
           <Form.Control
            onChange={handleChange} 
            value={name} name='name' 
-            style={{ width: "150px", margin: "auto", backgroundColor:"rgba(139, 166, 248, 0.637)" }}
+            style={{ width: "150px", margin: "auto", backgroundColor:"rgb(143, 200, 253)" }}
             type="text"
             placeholder="Nombre"
 
@@ -53,7 +53,7 @@ const {name,email, phone, message} = form;
           <Form.Control
             onChange={handleChange} 
             value={email} name='email' 
-            style={{ width: "150px", margin: "auto", backgroundColor:"rgba(139, 166, 248, 0.637)"  }}
+            style={{ width: "150px", margin: "auto", backgroundColor:"rgb(143, 200, 253)"  }}
             type="email"
             placeholder="name@example.com"
           />
@@ -64,7 +64,7 @@ const {name,email, phone, message} = form;
           <Form.Control
            onChange={handleChange} 
             value={phone} name='phone' 
-            style={{ width: "150px", margin: "auto" , backgroundColor:"rgba(139, 166, 248, 0.637)" }}
+            style={{ width: "150px", margin: "auto" , backgroundColor:"rgb(143, 200, 253)" }}
             type="tel"
             placeholder="Celular"
           />
@@ -75,7 +75,7 @@ const {name,email, phone, message} = form;
           <Form.Control
           onChange={handleChange} 
           value={message} name='message' 
-            style={{ width: "190px", margin: "auto", height:"90px" , backgroundColor:"rgba(139, 166, 248, 0.637)"  }}
+            style={{ width: "190px", margin: "auto", height:"90px" , backgroundColor:"rgb(143, 200, 253)"  }}
             as="textarea"
             rows={3}
           />
