@@ -21,6 +21,24 @@
 
 }
 
+#inverse-rotation {
+  animation-name: inverse-rotation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes inverse-rotation {
+  from {
+    transform: rotateZ(0deg)
+  }
+
+  to {
+    transform: rotateZ(-360deg)
+  }
+}
+
 /*NAV-BAR TOGGLE*/
 .toggle {
   border: none !important;
@@ -35,20 +53,15 @@
 
 /*SECTION*/
 section {
-  
-    
-    height: 100vh;
-    overflow: hidden;
-    background: #ffffff;
- 
 
-}
-
-.contact-section {
 
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  background-image: url(/src/images/Sprinkle.svg);
+  background-size: cover;
+
 }
+
 
 
 /*---HOME---*/
@@ -70,8 +83,8 @@ section {
   width: 48%;
 }
 
-.contenido-textos>h3{
-  color:rgb(5, 34, 119);
+.contenido-textos>h3 {
+  color: rgb(5, 34, 119);
 }
 
 .contenido-textos h3 span .icon-code {
@@ -92,9 +105,10 @@ section {
 
 .contenido-textos p {
   padding: 0px 0px 20px 15px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: justify;
   color: rgb(0, 0, 0);
+  font-size: 18px;
 
 }
 
@@ -103,6 +117,11 @@ section {
 
 /*CONTACT*/
 
+.contact-section {
+
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
 
 /*END-CONTACT*/
 
@@ -111,34 +130,34 @@ section {
 /* Slider start */
 @-webkit-keyframes scroll {
   0% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
-  
+
   100% {
-  -webkit-transform: translateX(calc(-200px * 10));
-  transform: translateX(calc(-200px * 10));
+    -webkit-transform: translateX(calc(-200px * 10));
+    transform: translateX(calc(-200px * 10));
   }
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
   0% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
-  
+
   100% {
-  -webkit-transform: translateX(calc(-200px * 10));
-  transform: translateX(calc(-200px * 10));
+    -webkit-transform: translateX(calc(-200px * 10));
+    transform: translateX(calc(-200px * 10));
   }
-  }
-  
-  .slider-container {
+}
+
+.slider-container {
   padding: 40px 0 85px;
   height: 200px;
-  }
-  
-  .slider {
+}
+
+.slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
@@ -149,10 +168,10 @@ section {
   border-color: rgb(197, 196, 196);
   border-width: 1px;
   border-style: dotted solid;
-  }
-  
-  .slider::before,
-  .slider::after {
+}
+
+.slider::before,
+.slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   /* background: linear-gradient(to right, #61d095 0%, rgba(97, 208, 149, 0) 100%); */
   content: "";
@@ -160,68 +179,74 @@ section {
   position: absolute;
   width: 200px;
   z-index: 2;
-  }
-  
-  .slider::after {
+}
+
+.slider::after {
   right: 0;
   top: 0;
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
-  }
-  
-  .slider::before {
+}
+
+.slider::before {
   left: 0;
   top: 0;
-  }
-  
-  .slider .slide-track {
+}
+
+.slider .slide-track {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 31);
-  }
-  
-  .slider .slide {
+}
+
+.slider .slide {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 250px;
-  }
-  /* Slider end */
-  .slide>a{
+}
+
+/* Slider end */
+.slide>a {
   text-decoration: none;
-  }
-  
-  .h4-container {
+}
+
+.h4-container {
   display: flex;
   justify-content: center;
-  }
-  
-  .logo-slider-title {
+}
+
+.logo-slider-title {
   width: 400px;
   font-size: 22px;
   margin-left: 25px;
   color: rgb(141, 139, 139);
-  }
-  
-  .corporation1{
+}
+
+.corporation1 {
   color: #FF4E02;
-  }
-  .corporation2{
-  color:rgb(8, 0, 83);
-  }
-  .corporation3{
-  color:#0c0c0c;
-  }
-  .corporation4{
-  color:#5e0127;
-  }
-  .corporation5{
+}
+
+.corporation2 {
+  color: rgb(8, 0, 83);
+}
+
+.corporation3 {
+  color: #0c0c0c;
+}
+
+.corporation4 {
+  color: #5e0127;
+}
+
+.corporation5 {
   color: #4e8e07;
-  }
-  /*END-SLIDER- PAGE*/
-  
+}
+
+/*END-SLIDER- PAGE*/
+
 /*FOOTER*/
 
 
@@ -233,7 +258,6 @@ section {
 
 }
 
-
 /*PAGE SERVICES*/
 /*services*/
 
@@ -242,44 +266,97 @@ section {
   margin-top: 6rem;
 
 }
+
 .title-services {
   color: rgb(5, 34, 119);
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 50px;
+
 }
 
 /*END PAGE SERVICES*/
 
 /*CONTACT- PAGE*/
+
 /*form*/
 
-
 .container-form {
-  margin: 5%;
+  margin: 2%;
 
 }
-.contact-title{
+
+.contact-title {
   color: rgb(5, 34, 119);
   font-size: 30px;
   text-align: center;
   margin-top: 95px;
-  
+
 }
 
 /*END-CONTACT- PAGE*/
+
+
+
+/*ABOUT US*/
+
+.title {
+  color: rgb(5, 34, 119);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 95px;
+  padding-bottom: 80px;
+}
+
+.aboutus {
+  background-image: url(/src/images/Sprinkle.svg);
+  background-size: cover;
+  padding-bottom: 100px;
+
+
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.individual-product {
+  width: 28%;
+  text-align: center;
+
+}
+
+.individual-product img {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 1px 5px 5px 3px rgb(209, 209, 209);
+}
+
+.individual-product h3 {
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+}
+
+
+/*END- ABOUT US*/
 
 /* MEDIAQUERIES*/
 
 @media screen and (max-width:900px) {
 
   section {
-    
+
     height: 100%;
     overflow: hidden;
 
   }
+
   .contenedor-sobre-nosotros {
     flex-direction: column;
     justify-content: center;
@@ -301,12 +378,13 @@ section {
     margin: 5%;
 
   }
+
 }
 
 @media screen and (max-width:575px) {
 
   section {
-    
+
     height: 100%;
     overflow: hidden;
 
@@ -319,6 +397,33 @@ section {
   }
 }
 
+/*MEDIAQUERIES ABOUT US*/
+
+@media screen and (max-width:768px) {
+  .product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .individual-product {
+    text-align: center;
+    padding: 20px;
+    min-width: 80%;
+
+  }
+
+  .individual-product img {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px 3px rgb(209, 209, 209);
+
+  }
+}
+
+
+/* END ABOUT US*/
 @media screen and (max-width:400px) {
 
   .sobre-nosotros {
@@ -327,12 +432,6 @@ section {
   }
 
   /*form*/
-
-  .container-form {
-    margin: 25%;
-    overflow: hidden;
-
-  }
 }
 
 @media screen and (max-width:244px) {
@@ -341,4 +440,3 @@ section {
     display: none;
   }
 }
-

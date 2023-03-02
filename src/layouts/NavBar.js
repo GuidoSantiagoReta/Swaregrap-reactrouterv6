@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Outlet, Link } from "react-router-dom";
-import logoreact from "../images/logo192.png";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
-
+import logosw from "../images/logosw.png";
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -13,7 +12,7 @@ const NavBar = () => {
       <Navbar fixed="top" className="nav-bar" variant="dark" expand="md">
         <Container fluid>
           <Navbar.Brand as={Link} to="/home">
-            <img className="image-logo" src={logoreact} height="30" alt="SwareGrap" />
+            <img className="image-logo" src={logosw} id="inverse-rotation" height="35" alt="SwareGrap" />
             SwareGrap
           </Navbar.Brand>
           <Navbar.Toggle
@@ -58,12 +57,16 @@ const NavBar = () => {
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
+              <Nav.Link as={Link} to="/Aboutus">
+                Nosotros
+              </Nav.Link>
               <Nav.Link as={Link} to="/services">
                 Servicios
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">
                 Contacto
               </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
