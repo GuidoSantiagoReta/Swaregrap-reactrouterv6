@@ -61,6 +61,7 @@ section {
   background-image: url(/src/images/Sprinkle.svg);
   background-size: cover;
 
+
 }
 
 
@@ -121,7 +122,7 @@ section {
 .contact-section {
 
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  
 }
 
 /*END-CONTACT*/
@@ -348,7 +349,23 @@ section {
 
 /*END- ABOUT US*/
 
+
+
+
+
 /* MEDIAQUERIES*/
+/*
+@media screen and (min-width:1800px) {
+   .container-form{
+   margin: 100px;
+  
+
+
+  }
+
+}
+*/
+
 
 @media screen and (max-width:900px) {
 
