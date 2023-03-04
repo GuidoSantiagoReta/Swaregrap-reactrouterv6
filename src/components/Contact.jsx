@@ -89,6 +89,7 @@ const {name,email, phone, message,} = form;
         <Button type="submit" variant="primary">Enviar</Button>
       
         {/*false captcha submit */}
+        <input type="hidden" name="_next" value="https://swaregrap-reactrouterv6.vercel.app/contact"></input>
         <input type="hidden" name="_captcha" value="false"></input>
       </Form>
     </section>
