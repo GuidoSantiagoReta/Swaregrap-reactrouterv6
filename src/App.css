@@ -426,9 +426,7 @@ section {
 /*MEDIAQUERIES ABOUT US*/
 
 @media screen and (max-width:768px) {
-  section{
-    height: 100vh;
-    }
+  
   .product-container {
     display: flex;
     justify-content: space-between;
@@ -465,9 +463,7 @@ section {
 }
 
 @media screen and (max-width:384px) {
-  .contact-section{
-    height: 100vh;
-  }
+  
 
 }
 
