@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
 const Contact = () => {
 
 const [form, setForm] = useState({
@@ -20,6 +19,7 @@ const {name,email, phone, message,} = form;
         [name]:value
        })
     }
+    {/* */}
     const handleSubmit = (e) => {
       // para no recargar la pagina
       e.preventDefault()
@@ -37,7 +37,7 @@ const {name,email, phone, message,} = form;
   return (
     <section className="contact-section">
       <h2 className="contact-title">Contacto</h2>
-      <Form onSubmit={handleSubmit} className="container-form center-block">
+      <Form action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST"  className="container-form center-block"> {/*onSubmit={handleSubmit}*/}
         <Form.Group className="mb-3 " controlId="form-name">
           <Form.Label>Nombre</Form.Label>
           <Form.Control
@@ -59,7 +59,7 @@ const {name,email, phone, message,} = form;
             required={true}
             style={{ width: "150px", margin: "auto", backgroundColor:"rgb(143, 200, 253)"  }}
             type="email"
-            placeholder="name@example.com"
+            placeholder="name@mail.com"
           />
         </Form.Group>
 
@@ -87,6 +87,9 @@ const {name,email, phone, message,} = form;
           />
         </Form.Group>
         <Button type="submit" variant="primary">Enviar</Button>
+      
+        {/*false captcha submit */}
+        <input type="hidden" name="_captcha" value="false"></input>
       </Form>
     </section>
   );
