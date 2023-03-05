@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import Slider from "../components/Slider";
+import Slider from "../components/slider/Slider";
 import logosw from "../images/logosw.png";
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
