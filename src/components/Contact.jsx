@@ -25,7 +25,7 @@ const {name,email, phone, message,} = form;
       // para no recargar la pagina
       /*e.preventDefault()
       console.log(form)*/
-      
+
       alert('mensaje enviado con exito!!  Pronto nos pondremos en contacto!! ');
       
       setForm({
@@ -40,7 +40,7 @@ const {name,email, phone, message,} = form;
   return (
     <section className="contact-section">
       <h2 className="contact-title">Contacto</h2>
-      <Form  action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST" onSubmit={handleSubmit}   className="container-form center-block" > {/**/}
+      <Form  action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST" onSubmit={handleSubmit} className="container-form center-block" > {/**/}
         <Form.Group className="mb-3 " controlId="form-name">
           <Form.Label>Nombre</Form.Label>
           <Form.Control
