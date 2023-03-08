@@ -57,7 +57,7 @@ const NavBar = () => {
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/Aboutus">
+              <Nav.Link as={Link} to="/aboutus">
                 Nosotros
               </Nav.Link>
               <Nav.Link as={Link} to="/services">
