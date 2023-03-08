@@ -38,7 +38,7 @@ const {name,email, phone, message,} = form;
   }
 
   return (
-    <section className="contact-section">
+    <section className=" animate__animated animate__fadeIn contact-section">
       <h2 className="contact-title">Contacto</h2>
       <Form  action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST" onSubmit={handleSubmit} className="container-form center-block" > {/**/}
         <Form.Group className="mb-3 " controlId="form-name">

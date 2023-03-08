@@ -6,7 +6,7 @@ import server from '../../src/images/servertechnician.png'
 
 const AboutUs = () => {
   return (
-    <section className="aboutus">
+    <section className=" animate__animated animate__fadeIn aboutus">
     <div className="container">
       <h2 className="title">Nosotros</h2>
       <div className="product-container">
