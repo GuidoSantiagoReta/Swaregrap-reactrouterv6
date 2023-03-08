@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+
 const Contact = () => {
 
 const [form, setForm] = useState({
@@ -22,8 +23,10 @@ const {name,email, phone, message,} = form;
     {/* */}
     const handleSubmit = (e) => {
       // para no recargar la pagina
-      e.preventDefault()
-      console.log(form)
+      /*e.preventDefault()
+      console.log(form)*/
+      
+      alert('mensaje enviado con exito!!  Pronto nos pondremos en contacto!! ');
       
       setForm({
         name:'',
@@ -37,7 +40,7 @@ const {name,email, phone, message,} = form;
   return (
     <section className="contact-section">
       <h2 className="contact-title">Contacto</h2>
-      <Form action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST"  className="container-form center-block"> {/*onSubmit={handleSubmit}*/}
+      <Form  action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST" onSubmit={handleSubmit}   className="container-form center-block" > {/**/}
         <Form.Group className="mb-3 " controlId="form-name">
           <Form.Label>Nombre</Form.Label>
           <Form.Control
@@ -86,7 +89,8 @@ const {name,email, phone, message,} = form;
             rows={3}
           />
         </Form.Group>
-        <Button type="submit" variant="primary">Enviar</Button>
+        <Button  type="submit" variant="primary">Enviar</Button>
+        
       
         {/*false captcha submit */}
         <input type="hidden" name="_next" value="https://swaregrap-reactrouterv6.vercel.app/contact"></input>
