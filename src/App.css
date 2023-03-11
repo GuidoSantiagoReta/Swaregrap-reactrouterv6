@@ -238,6 +238,7 @@ section {
   }
 
   .contenedor-sobre-nosotros {
+      
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -265,7 +266,7 @@ section {
 
 @media screen and (min-width:769px) and (max-width:900px) {
   .aboutus {
-    height: 100vh;
+    height: 100%;
   }
 
 }
