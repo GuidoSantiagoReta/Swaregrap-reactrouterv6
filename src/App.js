@@ -1,11 +1,11 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
-import Services from "./components/Services";
 import NavBar from "./layouts/NavBar";
-import "bootstrap/dist/css/bootstrap.min.css";
 import AboutUs from "./components/AboutUs";
+import ServicesWeb from "./components/webservices/WebServices";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="aboutus" element={<AboutUs />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="services" element={<Services />} />
+            <Route path="services" element={<ServicesWeb />} />
             <Route path="*" element={<Navigate replace to="/" />} />
           </Route>
         </Routes>

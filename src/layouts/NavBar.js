@@ -60,9 +60,11 @@ const NavBar = () => {
               <Nav.Link as={Link} to="/aboutus">
                 Nosotros
               </Nav.Link>
+
               <Nav.Link as={Link} to="/services">
                 Servicios
               </Nav.Link>
+
               <Nav.Link as={Link} to="/contact">
                 Contacto
               </Nav.Link>
