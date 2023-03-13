@@ -4,6 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Slider from "../components/slider/Slider";
 import logosw from "../images/logosw.png";
+
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -57,10 +58,11 @@ const NavBar = () => {
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/aboutus">
+          
+              <Nav.Link as={Link} to="/about">
                 Nosotros
               </Nav.Link>
-
+              
               <Nav.Link as={Link} to="/services">
                 Servicios
               </Nav.Link>

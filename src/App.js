@@ -4,8 +4,9 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NavBar from "./layouts/NavBar";
-import AboutUs from "./components/AboutUs";
 import ServicesWeb from "./components/webservices/WebServices";
+import About from "./components/aboutus/About";
+
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             {/* ruta raíz */}
             {/* rutas relativas */}
             <Route index element={<Home />} />
-            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="services" element={<ServicesWeb />} />
             <Route path="*" element={<Navigate replace to="/" />} />

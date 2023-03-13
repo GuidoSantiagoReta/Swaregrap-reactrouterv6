@@ -36,7 +36,9 @@ const ServicesWeb = () => {
   return (
     
 
-    <> <div className=" animate__animated animate__fadeIn container-group">
+    <> 
+    
+    <div className=" animate__animated animate__fadeIn container-group">
     <h2 className="title-services">Servicios</h2>
     <CardGroup variant="separated" className="group-card g-3">
         {service.map((service) =>{

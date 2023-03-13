@@ -10,7 +10,7 @@ const Service = (props) => {
         <Card>
           <Card.Img variant="top" src={props.img} />
           <Card.Body>
-            <Card.Title className='color-title'>{props.title} </Card.Title>
+            <Card.Title className='color-title'>{props.title}</Card.Title>
             <Card.Text>{props.text}</Card.Text>
           </Card.Body>
         </Card>
