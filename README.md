@@ -4,7 +4,7 @@
 
 - __npm install react-bootstrap bootstrap__
 - __npm install react-router-dom__
-- __import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'__  (importar bootstrap en el index.js).
+- __import 'bootstrap/dist/css/bootstrap.min.css';__  (importar bootstrap en el index.js).
 - Crear carpeta components dentro de src (para crear nuestros componentes).
 - Crear carpeta layouts (para crear presentaciones que pinten la estructura básica de las distintas vistas / rutas de la aplicación).
 - Empezar a crear el navbar e importar los comoponentes que vayamos a usar.

@@ -3,11 +3,13 @@ import developer from "../images/developer.png";
 import { BsCodeSlash } from "react-icons/bs";
 import { AiOutlineDesktop } from "react-icons/ai";
 import 'animate.css';
+
 const Home = () => {
   return (
     <section className=" animate__animated animate__fadeIn contenedor sobre-nosotros">
       <div className=" contenedor-sobre-nosotros">
         <img src={developer} alt="Desarrollo Web" className="imagen-about-us" />
+
         <div className="contenido-textos">
           <h3>
             <span>
@@ -33,6 +35,7 @@ const Home = () => {
             sistemas operativos Windows y Linux.
           </p>
         </div>
+        
       </div>
     </section>
   );

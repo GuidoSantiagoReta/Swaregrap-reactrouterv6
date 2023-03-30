@@ -76,9 +76,9 @@ const NavBar = () => {
         </Container>
       </Navbar>
 
-      {/*mostrar el contenido de la vista */}
+      {/*mostrar el contenido de la vista -representa a los hijos rutas */}
       <section>
-        <Outlet></Outlet>
+        <Outlet></Outlet>   
       </section>
       <Slider/>
       <Footer />
