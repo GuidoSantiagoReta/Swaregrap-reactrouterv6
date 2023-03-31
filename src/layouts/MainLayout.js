@@ -5,11 +5,12 @@ import Footer from "../components/Footer";
 import Slider from "../components/slider/Slider";
 import logosw from "../images/logosw.png";
 
-const NavBar = () => {
+const MainLayaout = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   return (
     <>
+    {/*NavBar*/}
       <Navbar fixed="top" className=" animate__animated animate__fadeIn nav-bar" variant="dark" expand="md">
         <Container fluid>
           <Navbar.Brand as={Link} to="/home">
@@ -86,4 +87,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default MainLayaout;
