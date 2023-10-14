@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 const Contact = () => {
 
 const [form, setForm] = useState({
@@ -20,7 +22,7 @@ const {name,email, phone, message,} = form;
         [name]:value
        })
     }
-    {/* */}
+   
     const handleSubmit = (e) => {
       // para no recargar la pagina
       /*e.preventDefault()
@@ -40,6 +42,10 @@ const {name,email, phone, message,} = form;
   return (
     <section className=" animate__animated animate__fadeIn contact-section">
       <h2 className="contact-title">Contacto</h2>
+      <Container>
+      <Row className="d-flex justify-content-center align-items-center mt-5"> 
+         <Col xs={12} md={6}>
+      
       <Form  action="https://formsubmit.co/bd0fb0dd3a5c10ab5f8b09e359919cb8" method="POST" onSubmit={handleSubmit} className="container-form center-block" > {/**/}
         <Form.Group className="mb-3 " controlId="form-name">
           <Form.Label>Nombre</Form.Label>
@@ -47,7 +53,7 @@ const {name,email, phone, message,} = form;
            onChange={handleChange} 
            value={name} name='name' 
            required={true}
-           style={{ width: "150px", margin: "auto", backgroundColor:"rgb(143, 200, 253)" }}
+           style={{ width: "250px", margin: "auto", backgroundColor:"rgb(235, 245, 255)" }}
            type="text"
            placeholder="Nombre"
 
@@ -60,7 +66,7 @@ const {name,email, phone, message,} = form;
             onChange={handleChange} 
             value={email} name='email' 
             required={true}
-            style={{ width: "150px", margin: "auto", backgroundColor:"rgb(143, 200, 253)"  }}
+            style={{ width: "250px", margin: "auto", backgroundColor:"rgb(235, 245, 255)" }}
             type="email"
             placeholder="name@mail.com"
           />
@@ -72,7 +78,7 @@ const {name,email, phone, message,} = form;
            onChange={handleChange} 
             value={phone} name='phone' 
             required={true}
-            style={{ width: "150px", margin: "auto" , backgroundColor:"rgb(143, 200, 253)" }}
+            style={{ width: "250px", margin: "auto", backgroundColor:"rgb(235, 245, 255)" }}
             type="tel"
             placeholder="Celular"
           />
@@ -84,7 +90,7 @@ const {name,email, phone, message,} = form;
           onChange={handleChange} 
           value={message} name='message' 
           required={true}
-            style={{ width: "190px", margin: "auto", height:"90px" , backgroundColor:"rgb(143, 200, 253)"  }}
+          style={{ height: "200px", width: "250px", margin: "auto", backgroundColor:"rgb(235, 245, 255)" }}
             as="textarea"
             rows={3}
           />
@@ -96,7 +102,11 @@ const {name,email, phone, message,} = form;
         <input type="hidden" name="_next" value="https://swaregrap-reactrouterv6.vercel.app/contact"></input>
         <input type="hidden" name="_captcha" value="false"></input>
       </Form>
+      </Col>
+      </Row>
+      </Container>
     </section>
+
   );
 };
 export default Contact;

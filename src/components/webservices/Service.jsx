@@ -1,19 +1,23 @@
-import React from 'react'
+import React from 'react';
 import Card from "react-bootstrap/Card";
-import '../../App.css'
+import Col from 'react-bootstrap/Col';
+import '../../App.css';
 
 const Service = (props) => {
   return (
    
     
-      
-        <Card>
-          <Card.Img variant="top" src={props.img} />
-          <Card.Body>
-            <Card.Title className='color-title'>{props.title}</Card.Title>
-            <Card.Text>{props.text}</Card.Text>
-          </Card.Body>
-        </Card>
+    <Col md={4} className="mb-4">
+    <Card className="h-100 shadow-sm bg-white rounded">
+      <Card.Img variant="top" src={props.img} />
+      <Card.Body className="d-flex flex-column">
+        <div className="d-flex mb-2 justify-content-between">
+          <Card.Title className="mb-0 font-weight-bold">{props.title}</Card.Title>
+        </div>
+        <Card.Text className="text-secondary">{props.text}</Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
        
          
   )
