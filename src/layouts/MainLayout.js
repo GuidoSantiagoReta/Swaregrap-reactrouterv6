@@ -56,19 +56,19 @@ const MainLayaout = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-center">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link href="#home" as={Link} to="/">
                 Home
               </Nav.Link>
           
-              <Nav.Link as={Link} to="/about">
+              <Nav.Link href="#about" as={Link} to="/about">
                 Nosotros
               </Nav.Link>
               
-              <Nav.Link as={Link} to="/services">
+              <Nav.Link href="services" as={Link} to="/services">
                 Servicios
               </Nav.Link>
 
-              <Nav.Link as={Link} to="/contact">
+              <Nav.Link href="contact" as={Link} to="/contact">
                 Contacto
               </Nav.Link>
 
