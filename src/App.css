@@ -156,23 +156,17 @@ section {
 }
 
 
-
-
 /*CONTACT- PAGE*/
 
 /*form*/
 
 
-.container-form {
-  margin: 2%;
-
-}
 
 .contact-title {
   color: rgb(5, 34, 119);
   font-size: 30px;
   text-align: center;
-  margin-top: 95px;
+
 
 }
 
@@ -287,9 +281,12 @@ section {
 
 
 
-@media screen and (min-width:769px) and (max-width:900px) {
+
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
   .aboutus {
-    height: 100%;
+    height: 100vh;
   
   }
 
