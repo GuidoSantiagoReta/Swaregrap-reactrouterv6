@@ -56,6 +56,7 @@ const {name,email, phone, message,} = form;
            style={{ width: "250px", margin: "auto", backgroundColor:"rgb(235, 245, 255)" }}
            type="text"
            placeholder="Nombre"
+           className="form-control"
 
           />
         </Form.Group>

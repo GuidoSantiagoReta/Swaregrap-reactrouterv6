@@ -353,10 +353,14 @@ section {
 }
 
 
-@media screen and (max-width:244px) {
 
-  .toggle {
-    display: none;
+@media screen and (max-width:281px) {
+  .form-control{
+    width: 150px !important;
   }
-
+  
+  .toggle{
+   width: 10px;
+   margin-right: 32px;
+  }
 }
