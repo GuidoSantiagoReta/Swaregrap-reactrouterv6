@@ -54,10 +54,7 @@
 
 /*SECTION*/
 section {
-
-
   height: 100vh;
-
   background-image: url(/src/images/Sprinkle.svg);
   background-size: cover;
 }
@@ -67,15 +64,16 @@ section {
 
 .contenedor-sobre-nosotros {
   display: flex;
-  flex-direction: row; /* or 'column' for vertical layout */
+  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; /* to align items vertically */
+  align-items: center; 
   margin-top: 10rem;
 }
 
 .imagen-about-us {
   margin: 5rem;
   min-width: 1%;
+  width: 100%;
 }
 
 .sobre-nosotros .contenido-textos {
@@ -132,7 +130,7 @@ section {
 
 .container-group {
   height: 100%;
-  margin-top: 6rem;
+  margin-top: 8rem;
 
 }
 
@@ -140,9 +138,12 @@ section {
   color: rgb(5, 34, 119);
   font-size: 30px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  
+  
 
+}
+.group-card{
+  margin-top: 8rem;
 }
 
 /*END PAGE SERVICES*/
@@ -151,7 +152,7 @@ section {
 
 .contact-section {
   height: 100%;
-  padding: 20px;
+  margin-top: 8rem;
 }
 
 
@@ -182,6 +183,9 @@ section {
 
 
 /*ABOUT US*/
+.container{
+ margin-top: 8rem;
+}
 
 .title {
   color: rgb(5, 34, 119);
@@ -194,16 +198,14 @@ section {
 .aboutus {
   background-image: url(/src/images/Sprinkle.svg);
   background-size: cover;
-  padding-bottom: 100px;
-
-
+ 
 }
 
 .product-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+ margin-top: 8rem;
 
 }
 
@@ -236,7 +238,7 @@ section {
 /* MEDIAQUERIES*/
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1300px) {
 
   section {
 
@@ -270,11 +272,25 @@ section {
 
   }
 
+
+  .product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 6rem;
+  
+  }
+  .bg-footer{
+    height: 100%;
+  }
 }
+
+
 
 @media screen and (min-width:769px) and (max-width:900px) {
   .aboutus {
     height: 100%;
+  
   }
 
 }
@@ -294,6 +310,11 @@ section {
     height: 100%;
 
   }
+
+  .slider-container {
+    padding: 40px 0 85px;
+    height: 200px;
+  }
 }
 
 /*MEDIAQUERIES ABOUT US*/
@@ -309,7 +330,7 @@ section {
 
   .individual-product {
     text-align: center;
-    padding: 20px;
+    
     min-width: 80%;
 
   }
