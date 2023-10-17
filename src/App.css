@@ -83,6 +83,7 @@ section {
 
 .contenido-textos>h3 {
   color: rgb(5, 34, 119);
+  font-weight: bold;
 }
 
 .contenido-textos h3 span .icon-code {
@@ -102,7 +103,7 @@ section {
 
 .contenido-textos p {
   padding: 0px 0px 20px 15px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: justify;
   color: rgb(0, 0, 0);
   font-size: 20px;
@@ -146,6 +147,11 @@ section {
   margin-top: 8rem;
 }
 
+
+.description{
+  font-weight: 500 !important;
+  
+}
 /*END PAGE SERVICES*/
 
 /*CONTACT*/

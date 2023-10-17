@@ -6,8 +6,8 @@ const CardAboutUs = (props) => {
     <>
     
         <div className="individual-product">
-          <img src={props.img} alt="desarrolladores web" />
-          <h3>{props.description}</h3>
+          <img  className="title-about"src={props.img} alt="desarrolladores web" />
+          <h3 className="description">{props.description}</h3>
         </div>
     
     </>
