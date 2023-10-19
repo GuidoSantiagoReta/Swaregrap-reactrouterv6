@@ -152,6 +152,20 @@ section {
   font-weight: 500 !important;
   
 }
+
+.card-padding {
+  padding: 20px !important;
+}
+.card-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)  !important;
+}
+.card-margin{
+  margin: 20px !important;
+}
+.card-border {
+  border: 1px solid;
+  border-color: rgb(168, 168, 168) !important;
+}
 /*END PAGE SERVICES*/
 
 /*CONTACT*/

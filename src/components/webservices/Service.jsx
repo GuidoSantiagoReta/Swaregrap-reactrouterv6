@@ -8,7 +8,7 @@ const Service = (props) => {
    
     
     <Col md={4} className="mb-4">
-    <Card className="h-100 shadow-sm bg-white rounded">
+    <Card className="h-100 shadow-sm bg-white rounded card-padding  card-shadow card-margin card-border">
       <Card.Img variant="top" src={props.img} />
       <Card.Body className="d-flex flex-column">
         <div className="d-flex mb-2 justify-content-between">
