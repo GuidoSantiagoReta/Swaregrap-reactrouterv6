@@ -119,3 +119,10 @@
 }
 
 /*END-SLIDER- PAGE*/
+
+@media screen and (min-width:1300px) {
+  .slider-container {
+    /* padding: 40px 0 85px; */
+    height: 200px;
+}
+}

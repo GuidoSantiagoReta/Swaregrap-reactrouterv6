@@ -383,7 +383,16 @@ section {
 
 }
 
-
+@media screen and (max-width:345px) {
+  .form-control{
+    width: 200px !important;
+  }
+  
+  .toggle{
+   width: 10px;
+   margin-right: 32px;
+  }
+}
 
 @media screen and (max-width:281px) {
   .form-control{
