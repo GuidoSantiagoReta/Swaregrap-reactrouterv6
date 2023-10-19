@@ -144,7 +144,7 @@ section {
 
 }
 .group-card{
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 
@@ -198,7 +198,7 @@ section {
 
 /*ABOUT US*/
 .container{
- margin-top: 8rem;
+ margin-top: 2rem;
 }
 
 .title {
@@ -336,7 +336,7 @@ section {
 
 /*MEDIAQUERIES ABOUT US*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1300px) {
 
   .product-container {
     display: flex;
