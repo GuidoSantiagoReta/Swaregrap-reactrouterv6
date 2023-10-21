@@ -28,6 +28,8 @@
 .slider-container {
   padding: 20px 0 85px;
   height: 200px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .slider {
@@ -125,4 +127,16 @@
     /* padding: 40px 0 85px; */
     height: 200px;
 }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    height: auto; 
+    margin-bottom: 30px;
+  }
+  .bg-footer {
+    height: auto; 
+  }
 }
