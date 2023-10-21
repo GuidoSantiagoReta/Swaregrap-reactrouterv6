@@ -92,6 +92,7 @@
 .h4-container {
   display: flex;
   justify-content: center;
+  padding: 18px;
 }
 
 .logo-slider-title {
