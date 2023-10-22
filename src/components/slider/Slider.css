@@ -126,7 +126,7 @@
 
 @media screen and (min-width:1300px) {
   .slider-container {
-    /* padding: 40px 0 85px; */
+    padding: 40px 0 85px; 
     height: 200px;
 }
 }
@@ -134,11 +134,22 @@
 
 
 @media screen and (max-width: 600px) {
+
   .slider-container {
+    padding: 0;
     height: auto; 
     margin-bottom: 30px;
   }
-  .bg-footer {
-    height: auto; 
+
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(100px * 25);
+  }
+
+  .slide h3 {
+    font-size: 19px ;
+   
   }
 }
