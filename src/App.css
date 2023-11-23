@@ -11,7 +11,7 @@
 
 .App {
   text-align: center;
-
+  min-height: calc(100vh);
 }
 
 
@@ -127,6 +127,7 @@ section {
   background: linear-gradient(45deg, rgb(5, 34, 119) 31%, rgb(14, 100, 248) 89%);
   width: 100%;
   height: auto;
+ 
   
 }
 
@@ -304,6 +305,7 @@ form {
   }
   .bg-footer{
     height: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -334,6 +336,7 @@ form {
   }
   .bg-footer {
     height: auto; 
+    margin-bottom: 0;
   }
 }
 
@@ -383,7 +386,9 @@ form {
 
     padding-top: 5vh;
   }
-
+  .bg-footer{
+  margin-bottom: 0;
+}
 }
 
 @media screen and (max-width:345px) {
