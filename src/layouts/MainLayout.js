@@ -11,7 +11,7 @@ const MainLayaout = () => {
   return (
     <>
     {/*NavBar*/}
-      <Navbar fixed="top" className=" animate__animated animate__fadeIn nav-bar" variant="dark" expand="md">
+      <Navbar collapseOnSelect fixed="top" className=" animate__animated animate__fadeIn nav-bar" variant="dark" expand="md">
         <Container fluid>
           <Navbar.Brand as={Link} to="/home">
             <img className="image-logo" src={logosw} id="inverse-rotation" height="35" alt="SwareGrap" />
