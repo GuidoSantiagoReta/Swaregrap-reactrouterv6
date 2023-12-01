@@ -12,7 +12,7 @@ const BurgerMenu = () => {
 
  return (
   <>
-    <Navbar collapseOnSelect fixed="top" className=" animate__animated animate__fadeIn nav-bar" variant="dark" expand="md">
+    <Navbar collapseOnSelect fixed="top" className=" animate__animated animate__fadeIn nav-bar " variant="dark" expand="md">
       <Container fluid>
         <Navbar.Brand as={Link} to="/home">
           <img className="image-logo" src={logoswg} id="inverse-rotation" height="35" alt="SwareGrap" />
@@ -20,7 +20,7 @@ const BurgerMenu = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar " onClick={handleShow} className="toggle" />
         <Offcanvas show={show} onHide={handleClose} placement="end" className="visible nav-bar">
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header closeButton className="close-button">
             <Offcanvas.Title> <img className="image-logo" src={logoswg} id="inverse-rotation" height="35" alt="SwareGrap" />SwareGrap</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>

@@ -12,7 +12,7 @@ const [collapsed, setCollapsed] = useState(true);
 
   return (
     <>
-    <Navbar collapseOnSelect fixed="top" className=" animate__animated animate__fadeIn nav-bar" variant="dark" expand="md">
+    <Navbar collapseOnSelect fixed="top" className=" animate__animated animate__fadeIn nav-bar navbar-height" variant="dark" expand="md" height={100}>
     <Container fluid>
       <Navbar.Brand as={Link} to="/home">
         <img className="image-logo" src={logosw} id="inverse-rotation" height="35" alt="SwareGrap" />

@@ -41,6 +41,10 @@
 }
 
 /*NAV-BAR TOGGLE*/
+
+.navbar-height{
+  height: 100px;
+}
 .toggle {
   border: none !important;
 }
@@ -49,7 +53,12 @@
   box-shadow: none !important;
 }
 
+
 /*NAV-LINKS*/
+
+.text-light{
+  font-size: 20px !important;
+}
 
 /* burger menu*/
 
