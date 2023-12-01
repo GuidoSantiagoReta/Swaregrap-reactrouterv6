@@ -51,6 +51,13 @@
 
 /*NAV-LINKS*/
 
+/* burger menu*/
+
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+ }
 body{
   background-image: url(/src/images/Sprinkle.svg);
   background-size: cover;
