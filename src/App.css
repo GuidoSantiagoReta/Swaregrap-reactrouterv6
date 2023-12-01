@@ -188,6 +188,8 @@ section {
   border: 1px solid;
   border-color: rgb(168, 168, 168) !important;
 }
+
+
 /*END PAGE SERVICES*/
 
 /*CONTACT*/
@@ -215,7 +217,9 @@ form {
 
 }
 
-
+.text-light-foo{
+  color: #fff !important;
+}
 
 /*END-CONTACT- PAGE*/
 
