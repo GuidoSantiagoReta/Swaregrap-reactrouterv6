@@ -23,21 +23,23 @@ const BurgerMenu = () => {
           <Offcanvas.Header closeButton className="close-button">
             <Offcanvas.Title> <img className="image-logo" src={logoswg} id="inverse-rotation" height="35" alt="SwareGrap" />SwareGrap</Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
+          <Offcanvas.Body className="d-flex align-items-center">
+          <div className="w-100">
             <Nav className="ms-auto text-center">
-              <Nav.Link href="#home" as={Link} to="/" onClick={handleClose} className="w-100 py-3 my-2 text-light">
+              <Nav.Link href="#home" as={Link} to="/" onClick={handleClose} className="w-100 py-4 my-4 text-light">
                Home
               </Nav.Link>
-              <Nav.Link href="#about" as={Link} to="/about" onClick={handleClose}className="w-100 py-3 my-2 text-light">
+              <Nav.Link href="#about" as={Link} to="/about" onClick={handleClose}className="w-100 py-4 my-4 text-light">
                Nosotros
               </Nav.Link>
-              <Nav.Link href="services" as={Link} to="/services" onClick={handleClose}className="w-100 py-3 my-2 text-light">
+              <Nav.Link href="services" as={Link} to="/services" onClick={handleClose}className="w-100 py-4 my-4 text-light">
                Servicios
               </Nav.Link>
-              <Nav.Link href="contact" as={Link} to="/contact" onClick={handleClose}className="w-100 py-3 my-2 text-light">
+              <Nav.Link href="contact" as={Link} to="/contact" onClick={handleClose}className="w-100 py-4 my-4 text-light">
                Contacto
               </Nav.Link>
             </Nav>
+            </div>
           </Offcanvas.Body>
         </Offcanvas>
       </Container>
