@@ -433,3 +433,10 @@ form {
    margin-right: 32px;
   }
 }
+
+
+@media screen and (max-width:245px) {
+  .toggle{
+    display: none;
+   }
+}
